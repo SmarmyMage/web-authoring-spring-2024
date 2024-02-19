@@ -25,9 +25,9 @@ a:visited {
     padding: 0 6px 0 6px;
 }
 
-h1, h2, h3 {
+h2, h3 {
     font: bold xx-large 'Times New Roman', Times, serif;
-    color: #BB5566;
+    color: #EE99AA;
 }
 
 h2 {
@@ -41,11 +41,12 @@ h3 {
 li {
     font: 1.2em Arial, Helvetica, sans-serif;
     padding: 4px;
+    color: #ffffff
 }
 
-p {
+p, blockquote {
     font: 1.2em Arial, Helvetica, sans-serif;
-    color: #000000
+    color: #ffffff
 }
 
 #border {
@@ -56,6 +57,7 @@ p {
 }
 
 footer {
+    text-align: center;
     background-color: #004488;
 }
 
