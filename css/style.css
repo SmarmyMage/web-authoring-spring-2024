@@ -7,13 +7,35 @@ main {
     background-color: #004488;
 }
 
+header {
+    background: url(../images/Persona+4+Golden.png);
+    height: 320px;
+    width: 1410px;
+}
+
 header h1{
     font: 400 gilda-display;
-    color: #6699CC
+    color: #6699CC;
+    background-color: #004488;
+    background-size: 100% 25%;
+}
+
+nav {
+    background-image: linear-gradient(to right,  #66CCEE, #0077BB, #66CCEE);
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: .75em;
 }
 
 a:link {
     color: #EECC66
+}
+
+a:hover {
+    color: #DDAA33
 }
 
 a:visited {
@@ -26,7 +48,7 @@ a:visited {
 }
 
 h2, h3 {
-    font: bold xx-large 'Times New Roman', Times, serif;
+    font: bold 'Times New Roman', Times, serif;
     color: #EE99AA;
 }
 
@@ -54,11 +76,13 @@ p, blockquote {
     margin-bottom: 8px;
     padding-top: -10px;
     padding-bottom: 8px;
+    background-image: radial-gradient(#004488 40%, #0077BB 80%, #6699CC)
 }
 
 footer {
     text-align: center;
     background-color: #004488;
+    background-image: linear-gradient(to right, #66CCEE, #0077BB, #66CCEE);
 }
 
 @font-face {
