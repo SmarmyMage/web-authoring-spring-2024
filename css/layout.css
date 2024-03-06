@@ -7,8 +7,11 @@ figure {
     float: right;
 }
 
-header h1{
-    background-size: 100% 25%;
+header {
+    height: 20vw;
+    width: 100vw;
+    background: url(../images/Persona+4+Golden.png);
+    background-size: cover;
 }
 
 #headerText {
@@ -39,26 +42,28 @@ li {
 
 #navFlex {
     display: flex;
-    flex: 0 1 15%;
+    flex: 1 0 15%;
     padding: 1em;
     flex-flow: column wrap;
+    min-width: 200px;
 }
 
 #logoImage {
     position: absolute;
     display: inline-block;
-    margin: -10px 0 0 1369px;
+    top: 10px;
+    right: 10px;
     max-width: 40px;
 }
 
 #sectFlex {
-    flex: 0 1 60%;
+    flex: 1 1 60%;
     padding: 1em;
     align-self: auto;
 }
 
 aside {
-    flex: 0 1 17.2%;
+    flex: 1 1 17.2%;
     padding: 1em;
 }
 
@@ -76,6 +81,10 @@ figure {
     float: left;
     height: auto;
     width: auto;
+}
+
+.flexImage {
+    max-width: 100%;
 }
 
 footer {
