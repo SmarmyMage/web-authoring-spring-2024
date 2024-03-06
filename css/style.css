@@ -21,6 +21,10 @@ nav {
     background-image: linear-gradient(to right,  #66CCEE, #0077BB, #66CCEE);
 }
 
+#navFlex {
+    background-image: linear-gradient(to bottom,  #66CCEE, #0077BB, #66CCEE);
+}
+
 nav li {
     list-style-type: none;
     display: inline-block;
@@ -51,6 +55,10 @@ h2 {
     font-size: x-large;
 }
 
+#h2Text {
+    text-align: center;
+}
+
 h3 {
     font-size: 1.3em;
 }
@@ -65,13 +73,18 @@ p, blockquote {
     color: #ffffff
 }
 
+#asideFlex {
+    background-image: linear-gradient(to bottom,  #66CCEE, #0077BB, #66CCEE);
+}
+
 #border {
     border: #6699CC medium solid;
     background-image: radial-gradient(#004488 40%, #0077BB 80%, #6699CC)
 }
 
-aside {
+figure {
     color: #ffffff;
+    text-align: center;
 }
 
 #figureBorder {
