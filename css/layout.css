@@ -90,3 +90,8 @@ figure {
 footer {
     clear: both;
 }
+
+footer > p {
+    margin: 0;
+    padding: 10px 0;
+}
