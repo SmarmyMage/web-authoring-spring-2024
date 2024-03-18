@@ -1,15 +1,10 @@
-header {
-    height: 320px;
-    width: 1409px;
-}
-
 figure {
     float: right;
 }
 
 header {
     height: 20vw;
-    width: 100vw;
+    width: 100%;
     background: url(../images/Persona+4+Golden.png);
     background-size: cover;
 }
