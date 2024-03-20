@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: [header-start] 1fr [content-start] auto [footer-start] 1fr;
+    grid-template-columns: [nav] 1fr [section] 3fr [aside] 1fr;
+    grid-template-areas:
+    "head head head"
+    "nav section aside"
+    "foot foot foot";
+}
+
+.header {
+    grid-area: head;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.section {
+    grid-area: section;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: foot;
+}

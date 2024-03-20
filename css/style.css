@@ -95,7 +95,7 @@ figure {
 footer {
     text-align: center;
     background-color: #004488;
-    background-image: linear-gradient(to right, #66CCEE, #0077BB, #66CCEE);
+    background: linear-gradient(to right, #66ccee, #004488, #66ccee);
 }
 
 @font-face {
