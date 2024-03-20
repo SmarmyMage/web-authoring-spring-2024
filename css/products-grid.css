@@ -8,7 +8,7 @@ body {
     grid-template-columns: [nav] 1fr [section] 3fr [aside] 1fr;
     grid-template-areas:
     "head head head"
-    "nav section aside"
+    "nav main aside"
     "foot foot foot";
 }
 
@@ -20,8 +20,8 @@ body {
     grid-area: nav;
 }
 
-.section {
-    grid-area: section;
+.main {
+    grid-area: main;
 }
 
 .aside {
