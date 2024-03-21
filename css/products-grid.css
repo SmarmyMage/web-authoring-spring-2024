@@ -45,9 +45,18 @@ body {
     text-align: center;
 }
 
-#flexFigure {
-    display: block;
-    float: right;
+figure {
+    display: grid;
+}
+
+.flexImage {
+    align-items: start;
+    height: auto;
+    width: auto;
+}
+
+.flexFigure {
+    align-items: end;
     height: auto;
     width: auto;
 }
