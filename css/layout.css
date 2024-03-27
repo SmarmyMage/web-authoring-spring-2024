@@ -1,7 +1,3 @@
-figure {
-    float: right;
-}
-
 header {
     height: 20vw;
     width: 100%;
@@ -39,16 +35,11 @@ nav li {
 }
 
 ul {
-    margin: 1em 0;
+    margin: 1em;
 }
 
 li {
     padding: 4px;
-}
-
-#mainFlex {
-    display: flex;
-    align-content: flex-start;
 }
 
 #logoImage {
@@ -59,82 +50,16 @@ li {
     max-width: 40px;
 }
 
-#sectFlex {
-    flex: 1 1 60%;
-    padding: 1em;
-    align-self: auto;
-}
-
-aside {
-    flex: 1 1 17.2%;
-    padding: 1em;
-}
-
-blockquote {
-    margin: 1.2em 0;
-}
-
 p {
     margin: 1.2em 0;
 }
 
-#border {
-    box-sizing: border-box;
-    border-radius: 0%;
-    margin-bottom: 8px;
-    padding-bottom: 8px;
-    width: auto;
-}
-
-figure {
-    box-sizing: border-box;
-    display: block;
-    float: left;
-    height: auto;
-    width: auto;
-    margin: 1em 0;
-}
-
-.flexImage {
-    max-width: 100%;
-}
-
 footer {
     clear: both;
+    padding: 2em;
 }
 
-footer > p {
-    margin: 0;
-    padding: 10px 0;
-}
-
-@media screen and (max-width: 499) {
-    header {
-        background: none;
-        background-size: none;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .navFlex {
-        display: none;
-    }
-
-    #navGrid {
-        display: none;
-    }
-
-    .body {
-        display: none;
-    }
-
-    
-}
-
-
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) {
 
     .navFlex {
         display: flex;
@@ -151,12 +76,59 @@ footer > p {
         max-width: 40px;
     }
 
-}
+} */
 
 @media screen and (min-width: 1000px) {
 
+    #mainFlex {
+        display: flex;
+        align-content: flex-start;
+    }
+
+    #sectFlex {
+        flex: 1 1 60%;
+        padding: 1em;
+        align-self: auto;
+    }
+
+    aside {
+        flex: 1 1 17.2%;
+        padding: 1em;
+    }
+
+    blockquote {
+        margin: 1.2em 0;
+    }
+
+    #border {
+        box-sizing: border-box;
+        border-radius: 0%;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        width: auto;
+    }
+
     figure {
-        margin: 1em 2.5em;
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        height: auto;
+        width: auto;
+        margin: 1em 0;
+    }
+
+    /* figure {
+        float: right;
+    } */
+
+
+    .flexImage {
+        max-width: 100%;
+    }
+
+    footer>p {
+        margin: 0;
+        padding: 10px 0;
     }
 
 }
