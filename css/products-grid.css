@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+.body {
     display: grid;
     grid-template-rows: [header-start] 1fr [content-start] auto [footer-start] 10vh;
     grid-template-columns: [nav] 1fr [main] 3fr [aside] 1fr;
@@ -43,10 +43,6 @@ body {
 
 .aside h2 {
     text-align: center;
-}
-
-figure {
-    display: grid;
 }
 
 .flexImage {

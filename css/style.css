@@ -1,6 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
-    background-color:#004488
+    background-color:#004488;
 }
 
 main {

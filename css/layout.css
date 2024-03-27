@@ -9,6 +9,18 @@ header {
     background-size: cover;
 }
 
+h1 {
+    margin: 1.34em 0;
+}
+
+h2 {
+    margin: 1.245em 0;
+}
+
+h3 {
+    margin: 1.3em 0;
+}
+
 #headerText {
     text-align: center;
 }
@@ -26,6 +38,10 @@ nav li {
     padding: 0 6px 0 6px;
 }
 
+ul {
+    margin: 1em 0;
+}
+
 li {
     padding: 4px;
 }
@@ -35,19 +51,11 @@ li {
     align-content: flex-start;
 }
 
-#navFlex {
-    display: flex;
-    flex: 1 0 15%;
-    padding: 1em;
-    flex-flow: column wrap;
-    min-width: 200px;
-}
-
 #logoImage {
     position: absolute;
     display: inline-block;
-    top: 10px;
-    right: 10px;
+    top: 1px;
+    right: 1px;
     max-width: 40px;
 }
 
@@ -60,6 +68,14 @@ li {
 aside {
     flex: 1 1 17.2%;
     padding: 1em;
+}
+
+blockquote {
+    margin: 1.2em 0;
+}
+
+p {
+    margin: 1.2em 0;
 }
 
 #border {
@@ -76,6 +92,7 @@ figure {
     float: left;
     height: auto;
     width: auto;
+    margin: 1em 0;
 }
 
 .flexImage {
@@ -89,4 +106,57 @@ footer {
 footer > p {
     margin: 0;
     padding: 10px 0;
+}
+
+@media screen and (max-width: 499) {
+    header {
+        background: none;
+        background-size: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .navFlex {
+        display: none;
+    }
+
+    #navGrid {
+        display: none;
+    }
+
+    .body {
+        display: none;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 500px) {
+
+    .navFlex {
+        display: flex;
+        flex: 1 0 15%;
+        padding: 1em;
+        flex-flow: column wrap;
+        min-width: 200px;
+    }
+
+
+    #logoImage {
+        top: 20px;
+        right: 8px;
+        max-width: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    figure {
+        margin: 1em 2.5em;
+    }
+
 }
