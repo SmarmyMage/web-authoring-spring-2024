@@ -12,6 +12,7 @@ body {
 
 main {
     background-color: #004488;
+    margin: auto 1.5em;
 }
 
 header h1{
@@ -94,6 +95,7 @@ p, blockquote {
 figure {
     color: #ffffff;
     text-align: center;
+    margin: 1em;
 }
 
 #figureBorder {
