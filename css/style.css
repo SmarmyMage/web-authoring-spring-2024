@@ -95,6 +95,7 @@ p, blockquote {
 figure {
     color: #ffffff;
     text-align: center;
+    margin: 1em;
 }
 
 #figureBorder {
