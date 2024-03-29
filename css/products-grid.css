@@ -2,61 +2,101 @@
     box-sizing: border-box;
 }
 
-.body {
-    display: grid;
-    grid-template-rows: [header-start] 1fr [content-start] auto [footer-start] 10vh;
-    grid-template-columns: [nav] 1fr [main] 3fr [aside] 1fr;
-    grid-template-areas:
-    "head head head"
-    "nav main aside"
-    "foot foot foot";
+@media screen and (max-width: 499px) {
+    .mobile-h2, .aside {
+        display: none;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
 }
 
-.header {
-    grid-area: head;
+@media screen and (min-width: 500px) {
+    .mobile-nav, .mobile-main {
+        display: none;
+    }
+
+    nav h2, ul {
+        margin: 0;
+    }
+
+    .body {
+        display: grid;
+        grid-template-rows: [header-start] 1fr [content-start] auto [footer-start] 10vh;
+        grid-template-columns: [nav] 1fr [main] 3fr [aside] 1fr;
+        grid-template-areas:
+        "head head head"
+        "nav main aside"
+        "foot foot foot";
+    }
+    
+    .header {
+        grid-area: head;
+    }
+    
+    .nav {
+        grid-area: nav;
+        display: flex;
+        flex: 1 0 15%;
+        padding: 2em;
+        flex-flow: column wrap;
+        min-width: 200px;
+    }
+    
+    .main {
+        grid-area: main;
+    }
+
+    main .flexFigure {
+        max-width: 50%;
+    }
+    
+    .main h2 {
+        text-align: center;
+    }
+    
+    .aside {
+        grid-area: aside;
+        display: flex;
+        flex: 1 1 17.2%;
+        padding: 1em;
+        flex-flow: column wrap;
+    }
+    
+    .aside h2 {
+        text-align: center;
+    }
+    
+    .flexImage {
+        float: none;
+        height: auto;
+        width: auto;
+    }
+    
+    .flexFigure {
+        align-items: end;
+        height: auto;
+        width: auto;
+    }
+    
+    .footer {
+        grid-area: foot;
+        padding: 0;
+
+    }
+
+    .footer p {
+        margin-top: 0.2em;
+    }
 }
 
-.nav {
-    grid-area: nav;
-    display: flex;
-    flex: 1 0 15%;
-    padding: 1em;
-    flex-flow: column wrap;
-    min-width: 200px;
-}
-
-.main {
-    grid-area: main;
-}
-
-.main h2 {
-    text-align: center;
-}
-
-.aside {
-    grid-area: aside;
-    display: flex;
-    flex: 1 1 17.2%;
-    padding: 1em;
-    flex-flow: column wrap;
-}
-
-.aside h2 {
-    text-align: center;
-}
-
-.flexImage {
-    align-items: start;
-    height: auto;
-    width: auto;
-}
-
-.flexFigure {
-    align-items: end;
-    height: auto;
-    width: auto;
-}
-
-.footer {
-    grid-area: foot;
+@media screen and (min-width: 1000px) {
+    ul {
+        margin: 1em;
+    }
 }

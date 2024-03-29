@@ -5,10 +5,6 @@ header {
     background-size: cover;
 }
 
-h1 {
-    margin: 1.34em 0;
-}
-
 h2 {
     margin: 1.245em 0;
 }
@@ -21,7 +17,7 @@ h3 {
     text-align: center;
 }
 
-#nav {
+#nav, #nav-top {
     position: sticky;
     top: 0;
 }
@@ -35,7 +31,7 @@ nav li {
 }
 
 ul {
-    margin: 1em;
+    margin: 0em;
 }
 
 li {
@@ -47,11 +43,19 @@ li {
     display: inline-block;
     top: 1px;
     right: 1px;
-    max-width: 40px;
+    max-width: 37px;
+}
+
+blockquote {
+    margin: 1.2em 0;
 }
 
 p {
     margin: 1.2em 0;
+}
+
+.flexImage {
+    max-width: 100%;
 }
 
 footer {
@@ -59,7 +63,33 @@ footer {
     padding: 2em;
 }
 
-/* @media screen and (min-width: 500px) {
+@media screen and (max-width: 499px) {
+    #mainFlex, .desk-top {
+        display: none;
+    }
+
+    .mobile-h2, .aside {
+        display: none;
+    }
+
+    .mobile-faq {
+        margin: 0;
+    }
+
+    .ul {
+        margin: 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+   .mobile-faq, .mobile-nav, .mobile-main, #nav-top {
+        display: none;
+   }
 
     .navFlex {
         display: flex;
@@ -69,14 +99,19 @@ footer {
         min-width: 200px;
     }
 
-
-    #logoImage {
-        top: 20px;
-        right: 8px;
-        max-width: 40px;
+    section h2, aside h2 {
+        text-align: center;
     }
 
-} */
+    nav h2, main {
+        margin: 0;
+    }
+
+    ul {
+        margin: 1em;
+    }
+
+}
 
 @media screen and (min-width: 1000px) {
 
@@ -84,22 +119,26 @@ footer {
         display: flex;
         align-content: flex-start;
     }
-
+    
     #sectFlex {
         flex: 1 1 60%;
         padding: 1em;
         align-self: auto;
     }
 
+    .navFlex {
+        display: flex;
+        flex: 1 0 15%;
+        padding: 2em;
+        flex-flow: column wrap;
+        min-width: 200px;
+    }
+    
     aside {
         flex: 1 1 17.2%;
         padding: 1em;
     }
-
-    blockquote {
-        margin: 1.2em 0;
-    }
-
+    
     #border {
         box-sizing: border-box;
         border-radius: 0%;
@@ -107,28 +146,18 @@ footer {
         padding-bottom: 8px;
         width: auto;
     }
-
+    
     figure {
         box-sizing: border-box;
         display: block;
         float: left;
         height: auto;
         width: auto;
-        margin: 1em 0;
+        margin: 1em 2.5em;
     }
-
-    /* figure {
-        float: right;
-    } */
-
-
-    .flexImage {
-        max-width: 100%;
-    }
-
-    footer>p {
+    
+    footer > p {
         margin: 0;
         padding: 10px 0;
     }
-
 }
