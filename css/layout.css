@@ -115,6 +115,10 @@ footer {
 
 @media screen and (min-width: 1000px) {
 
+    section h2, aside h2 {
+        text-align: left;
+    }
+
     #mainFlex {
         display: flex;
         align-content: flex-start;
