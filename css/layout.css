@@ -1,7 +1,7 @@
 header {
     height: 20vw;
     width: 100%;
-    background: url(../images/Persona+4+Golden.png);
+    background: url(../images/Persona+4+Golden.png) no-repeat center;
     background-size: cover;
 }
 
@@ -97,6 +97,7 @@ footer {
         padding: 1em;
         flex-flow: column wrap;
         min-width: 200px;
+        background-image: linear-gradient(to bottom,  #66CCEE, #0077BB, #66CCEE);
     }
 
     section h2, aside h2 {
