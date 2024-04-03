@@ -193,11 +193,11 @@ footer {
         border-top: #BB5566 medium solid;
     }
 
-    #figureBorder, #figcapBorder {
-        transition: background-color 5s;
-        -moz-transition: background-color 5s;
-        -webkit-transition: background-color 5s;
-        -o-transition: background-color 5s;
+    #figureBorder {
+        transition: border 2s;
+        -moz-transition: border 2s;
+        -webkit-transition: border 2s;
+        -o-transition: border 2s;
     }
     
     footer > p {
