@@ -1,0 +1,56 @@
+:root {
+    --text:#ffffff;
+    --blue-bg: #004488;
+    --light-blue: #6699CC;
+    --link-icon: #EECC66;
+    --link-hover:#DDAA33;
+    --link-visited: #997700;
+    --header-red:#EE99AA;
+    --border-red:#BB5566;
+    --gradient1: linear-gradient(to right,  #66CCEE, #0077BB, #66CCEE); 
+    --gradient2: linear-gradient(to bottom,  #66CCEE, #0077BB, #66CCEE);
+    --radial: radial-gradient(#004488 40%, #0077BB 80%, #6699CC);
+}
+
+.body-color {
+    background-color: var(--blue-bg);
+    color: var(--text);
+}
+
+.bg {
+    border: var(--blue-bg);
+}
+
+.header-color {
+    background-color: var(--blue-bg);
+    color: var(--light-blue);
+}
+
+.nav-bg {
+    background-color: var(--gradient1);
+}
+
+.link {
+    color: var(--link-icon);
+}
+
+.link:hover {
+    color: var(--link-hover);
+}
+
+.link:visited {
+    color: var(--link-visited);
+}
+
+.light-blue {
+    color: var(--light-blue);
+}
+
+.header-red {
+    color: var(--header-red);
+}
+
+.footer-color {
+    background-color: var(--gradient1);
+    color: var(--text);
+}

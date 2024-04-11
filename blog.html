@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/theme1.css">
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/fontawesome.css">
         <link rel="stylesheet" href="css/solid.css">
@@ -14,36 +15,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="body-color">
 
-        <header id="headerText">
-            <h1>Web Design/Development Articles</h1>
-            <img class="logo2" src="images/pyro-jack.png" alt="Pyro Jack Logo">
-            <img id="logoImage" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
+        <header id="headerText" class="headerFade bg">
+            <h1 class="header-color">Web Design/Development Articles</h1>
+            <img class="logo2 logoFade" src="images/pyro-jack.png" alt="Pyro Jack Logo">
+            <img class="logoImage logoFade" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
         </header>
 
-        <nav id="nav">
-            <a href="index.html"><i class="fa-solid fa-house icon"></i>Home</a>
-            <a href="blog.html"><i class="fa-solid fa-newspaper icon"></i>Blog</a>
-            <a href="products.html"><i class="fa-solid fa-gamepad icon"></i>Products</a>
-            <a href="faq.html"><i class="fa-regular fa-circle-question icon"></i>FAQ</a>
+        <nav id="nav" class="nav-bg">
+            <a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a>
+            <a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a>
+            <a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a>
+            <a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a>
         </nav>
 
-        <main>
+        <main class="bg">
 
             <aside>
-                <h2>List of Articles</h2>
+                <h2 class="header-red">List of Articles</h2>
                 <ul>
-                    <li><a href="#codecademy">Codecademy</a></li>
-                    <li><a href="#ibm">IBM</a></li>
-                    <li><a href="#gfg">GeeksforGeeks</a></li>
-                    <li><a href="#ux">UX Magazine</a></li>
+                    <li><a href="#codecademy" class="link">Codecademy</a></li>
+                    <li><a href="#ibm" class="link">IBM</a></li>
+                    <li><a href="#gfg" class="link">GeeksforGeeks</a></li>
+                    <li><a href="#ux" class="link">UX Magazine</a></li>
                 </ul>
             </aside>
 
-            <h2 id="codecademy"><a href="https://www.codecademy.com/article/f1-u6a2-design-color">Codecademy</a></h2>
+            <h2 id="codecademy"><a href="https://www.codecademy.com/article/f1-u6a2-design-color" class="link">Codecademy</a></h2>
             <article>
-                <h3>Design - Colors</h3>
+                <h3 class="header-red">Design - Colors</h3>
                 <img src="images/codecademy.png" class="flexImage" alt="Codecademy logo" title="Codecademy Logo">
                 <p>This article by the Codecademy team talks about how color is an important tool in designing a webpage. The article goes
                     into how to decide what colors you should pick by looking at other websites and using online tools to choose colors.
@@ -53,9 +54,9 @@
                     colorblind and visually impared people.</p>
             </article>
 
-            <h2 id="ibm"><a href="https://developer.ibm.com/articles/wa-interface/">IBM</a></h2>
+            <h2 id="ibm"><a href="https://developer.ibm.com/articles/wa-interface/" class="link">IBM</a></h2>
             <article>
-                <h3>User interface design for the mobile web</h3>
+                <h3 class="header-red">User interface design for the mobile web</h3>
                 <img src="images/ibm.png" class="flexImage" alt="IBM logo" title="IBM Logo">
                 <p>This article written by James Letz goes over how mobile devices differenciate between each other and 
                     the best practices for designing mobile web UIs. The article talks about display size and input for mobile devices.
@@ -65,9 +66,9 @@
                     do and avoid when desiging mobile web UIs. Even if the information might be outdated, it can provide useful as a refresher.</p>
             </article>
 
-            <h2 id="gfg"><a href="https://www.geeksforgeeks.org/web-development/">GeeksforGeeks</a></h2>
+            <h2 id="gfg"><a href="https://www.geeksforgeeks.org/web-development/" class="link">GeeksforGeeks</a></h2>
             <article>
-                <h3>Web Development</h3>
+                <h3 class="header-red">Web Development</h3>
                 <img src="images/gfg.png" class="flexImage" alt="GeeksforGeeks logo" title="GeeksforGeeks Logo">
                 <p>This article on GeeksforGeeks talks about the frontend and backend development in web development. Frontend development
                     is the part of a website users interact with, and where developers use HTML and CSS. Backend development deal with the server
@@ -77,9 +78,9 @@
                     backend, giving it more usefulness.</p>
             </article>
 
-            <h2 id="ux"><a href="https://uxmag.com/articles/why-web-design-is-dead">UX Magazine</a></h2>
+            <h2 id="ux"><a href="https://uxmag.com/articles/why-web-design-is-dead" class="link">UX Magazine</a></h2>
             <article>
-                <h3>Why Web Design is Dead</h3>
+                <h3 class="header-red">Why Web Design is Dead</h3>
                 <img src="images/ux-magazine.png" class="flexImage" alt="UX Magazine logo" title="UX Magazine Logo">
                 <p>This article by Sergio Nouvel goes over how web design is dying out to the popularity and increase use of UX Design
                     for a number of reasons. Some of the reasons mentions are: templates being commodofied, the use of AI, and
@@ -93,10 +94,12 @@
             
         </main>
 
-        <footer>
+        <footer class="footer-color">
             <p>&copy; Anthony Reyna, MyWebTraining, 2024</p>
-            <a href="https://www.dallascollege.edu/pages/default.aspx"><i class="fa-solid fa-building-columns icon"></i>Dallas College</a>
-            <a href="mailto:reynaanthony164@gmail.com"><i class="fa-solid fa-envelope icon"></i>Webmaster</a>
+            <img class="footerFrost" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
+            <a href="https://www.dallascollege.edu/pages/default.aspx" class="link"><i class="fa-solid fa-building-columns icon"></i>Dallas College</a>
+            <a href="mailto:reynaanthony164@gmail.com" class="link"><i class="fa-solid fa-envelope icon"></i>Webmaster</a>
+            <img class="footerPyro" src="images/pyro-jack.png" alt="Pyro Jack Logo">
         </footer>
 
     </body>
