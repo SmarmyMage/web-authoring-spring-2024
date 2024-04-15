@@ -27,7 +27,7 @@
 }
 
 .nav-bg {
-    background-color: var(--gradient1);
+    background-image: var(--gradient1);
 }
 
 .link {
@@ -51,6 +51,6 @@
 }
 
 .footer-color {
-    background-color: var(--gradient1);
+    background-image: var(--gradient1);
     color: var(--text);
 }

@@ -1,0 +1,70 @@
+/* Analogous*/
+
+:root {
+    --text1:#000000;
+    --text2: #ffffff;
+    --main-bg: #0077BB;
+    --dark-blue: #222255;
+    --light-blue: #77AADD;
+    --cyan: #6699CC;
+    --mute-cyan: #88CCEE;
+    --light-cyan: #99DDFF;
+    --pale-cyan: #CCEEFF;
+    --dark-cyan: #225555;
+    --teal: #009988;
+    --mute-teal: #44AA99;
+    --mint: #44BB99;
+    --link-icon: #117733;
+    --link-hover: #228833;
+    --link-visited: #225522;
+    --header-color:#99DDFF;
+    --gradient: linear-gradient(to bottom,  #44AA99, #6699CC, #44AA99);
+    --gradient-footer: linear-gradient(to right,  #44AA99, #6699CC, #44AA99);
+}
+
+.main-bg {
+    background-color: var(--main-bg);
+    color: var(--text2);
+}
+
+.bg {
+    background-color: var(--main-bg);
+}
+
+.header-color {
+    background-color: var(--main-bg);
+    color: var(--dark-cyan);
+}
+
+.nav-bg {
+    background-image: var(--gradient);
+}
+
+.aside-color {
+    background-image: var(--gradient);
+}
+
+.link {
+    color: var(--link-icon);
+}
+
+.link:hover {
+    color: var(--link-hover);
+}
+
+.link:visited {
+    color: var(--link-visited);
+}
+
+.light-blue {
+    color: var(--light-blue);
+}
+
+.header-green {
+    color: var(--header-color);
+}
+
+.footer-color {
+    background-image: var(--gradient-footer);
+    color: var(--text2);
+}

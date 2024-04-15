@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/theme2.css">
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/products-grid.css">
         <link rel="stylesheet" href="css/fontawesome.css">
@@ -15,36 +16,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     </head>
 
-    <body class="body">
+    <body class="body main-bg">
 
-        <header id="headerText" class="header">
-            <h1>Products</h1>
-            <img class="logo2" src="images/pyro-jack.png" alt="Pyro Jack Logo">
-            <img id="logoImage" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
+        <header id="headerText" class="header bg">
+            <h1 class="header-color">Products</h1>
+            <img class="logo2 logoFade" src="images/pyro-jack.png" alt="Pyro Jack Logo">
+            <img class="logoImage logoFade" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
         </header>
 
-        <nav class="nav" id="nav-top">
-            <h2 class="mobile-h2" id="h2Text">Page Links</h2>
+        <nav class="nav  nav-bg" id="nav-top">
+            <h2 class="mobile-h2 header-green" id="h2Text">Page Links</h2>
             <ul class="ul">
-                <li><a href="index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
-                <li><a href="blog.html"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
-                <li><a href="products.html"><i class="fa-solid fa-gamepad icon"></i>Products</a></li>
-                <li><a href="faq.html"><i class="fa-regular fa-circle-question icon"></i>FAQ</a></li>
+                <li><a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a></li>
+                <li><a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
+                <li><a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a></li>
+                <li><a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a></li>
             </ul>
         </nav>
 
-        <nav class="navFlex desk-top">
-            <h2 id="h2Text">Page Links</h2>
+        <nav class="navFlex desk-top nav-bg">
+            <h2 id="h2Text" class="header-green">Page Links</h2>
             <ul class="ul">
-                <li><a href="index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
-                <li><a href="blog.html"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
-                <li><a href="products.html"><i class="fa-solid fa-gamepad icon"></i>Products</a></li>
-                <li><a href="faq.html"><i class="fa-regular fa-circle-question icon"></i>FAQ</a></li>
+                <li><a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a></li>
+                <li><a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
+                <li><a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a></li>
+                <li><a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a></li>
             </ul>
         </nav>
 
-        <main class="main">
-            <h2>Games I Am Currently Playing</h2>
+        <main class="main bg">
+            <h2 class="header-green">Games I Am Currently Playing</h2>
 
             <figure class="flexImage">
                 <img src="images/nocturne.png" alt="Cover of Shin Megami Tensei III">
@@ -67,7 +68,7 @@
             </figure>
 
             <section class="mobile-main">
-                <h2>Game Backlog</h2>
+                <h2 class="header-green">Game Backlog</h2>
     
                 <figure>
                     <img src="images/dds.png" alt="Cover of Digital Devil Saga">
@@ -88,8 +89,8 @@
 
         </main>
 
-        <aside class="aside" id="asideFlex">
-            <h2>Game Backlog</h2>
+        <aside class="aside aside-color" id="asideFlex">
+            <h2 class="header-green">Game Backlog</h2>
 
             <figure>
                 <img src="images/dds.png" class="flexImage" alt="Cover of Digital Devil Saga">
@@ -108,10 +109,12 @@
 
         </aside>
 
-        <footer class="footer">
+        <footer class="footer footer-color">
             <p>&copy; Anthony Reyna, MyWebTraining, 2024</p>
-            <a href="https://www.dallascollege.edu/pages/default.aspx"><i class="fa-solid fa-building-columns icon"></i>Dallas College</a>
-            <a href="mailto:reynaanthony164@gmail.com"><i class="fa-solid fa-envelope icon"></i>Webmaster</a>
+            <img class="footerFrost" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
+            <a href="https://www.dallascollege.edu/pages/default.aspx" class="link"><i class="fa-solid fa-building-columns icon"></i>Dallas College</a>
+            <a href="mailto:reynaanthony164@gmail.com" class="link"><i class="fa-solid fa-envelope icon"></i>Webmaster</a>
+            <img class="footerPyro" src="images/pyro-jack.png" alt="Pyro Jack Logo">
         </footer>
 
     </body>

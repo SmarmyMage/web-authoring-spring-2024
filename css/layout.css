@@ -108,7 +108,7 @@ footer {
         padding: 1em;
         flex-flow: column wrap;
         min-width: 200px;
-        background-image: var(--gradient2);
+        background-image: var(--gradient);
     }
 
     section h2, aside h2 {
