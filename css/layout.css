@@ -189,11 +189,18 @@ footer {
         border: var(--border-red) medium solid;
     }
 
-    #figcapBorder:hover {
+    .figcapBorder:hover {
         border-top: var(--border-red) medium solid;
     }
 
     #figureBorder {
+        transition: border 2s;
+        -moz-transition: border 2s;
+        -webkit-transition: border 2s;
+        -o-transition: border 2s;
+    }
+
+    .figcapBorder {
         transition: border 2s;
         -moz-transition: border 2s;
         -webkit-transition: border 2s;
