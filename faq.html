@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title>FAQ</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/theme2.css">
         <link rel="stylesheet" href="css/layout.css">
@@ -18,51 +18,56 @@
     <body class="main-bg">
             
         <header id="headerText" class="bg">
-            <h1 class="header-color">FAQ</h1>
+            <h1 class="header-top">FAQ</h1>
             <img class="logo2 logoFade" src="images/pyro-jack.png" alt="Pyro Jack Logo">
             <img class="logoImage logoFade" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
         </header>
 
        <main id="mainFlex" class="bg"> 
 
-        <nav class="navFlex nav-bg" id="nav-top">
-            <h2 id="h2Text" class="header-green">Page Links</h2>
-            <ul class="ul">
-                <li><a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a></li>
-                <li><a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
-                <li><a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a></li>
-                <li><a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a></li>
-            </ul>
+        <nav id="nav myTopnav" class="nav-bg nav-button topnav">
+            <a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a>
+            <a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a>
+            <button onClick="changeStyle('css/theme2.css');" class="button">Apply New Style</button>
+            <button onClick="changeStyle('css/theme1.css');" class="button">Apply Old Style</button>
+            <a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a>
+            <a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a>
+            <a href="register.html" class="link"><i class="fa-regular fa-file-pen icon"></i>Register</a>
+            <a class="menu" onClick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
 
         <nav class="navFlex desk-top nav-bg">
-            <h2 id="h2Text" class="header-green">Page Links</h2>
+            <h2 id="h2Text" class="header-color">Page Links</h2>
             <ul class="ul">
                 <li><a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a></li>
                 <li><a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
+                <button onClick="changeStyle('css/theme2.css');" class="button">Apply New Style</button>
+                <button onClick="changeStyle('css/theme1.css');" class="button">Apply Old Style</button>
                 <li><a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a></li>
                 <li><a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a></li>
             </ul>
         </nav>
 
         <section id="sectFlex">
-            <h2 class="header-green">Frequently Asked Questions</h2>
+            <h2 class="header-color">Frequently Asked Questions</h2>
 
-            <h3 class="header-green">Where are you from?</h3>
+            <h3 class="header-color">Where are you from?</h3>
             <p>I'm from Dallas, Texas; born and raised. Though, I'm currently living in Garland, Texas. I've 
                 never lived anywhere else, but I have been to a few other states.</p>
 
-            <h3 class="header-green">Have you been outside of the country?</h3>
+            <h3 class="header-color">Have you been outside of the country?</h3>
             <p>I've only ever been to Mexico. However, I would like to visit other places outside of North America.
                 I'd love to go to Japan and the Netherlands.</p>
 
-            <h3 class="header-green">What's your ethnicity/race?</h3>
+            <h3 class="header-color">What's your ethnicity/race?</h3>
             <p>I'm Mexican. Oddly enough, people do think I'm Filipino or Arabic...</p>
 
-            <h3 class="header-green">What's your favorite song?</h3>
+            <h3 class="header-color">What's your favorite song?</h3>
             <p>My favorite song is "Moonchild" by Cibo Matto. Close contenders are "Didn't Cha Know" by Erykah Badu and "SAY GOODBYE" by Hiroshi Sato.</p>
 
-            <h3 class="header-green">What's your favorite video game?</h3>
+            <h3 class="header-color">What's your favorite video game?</h3>
             <p>My favorite video game is "Suikoden II." It's this game is the reason why I wanted to go into game development in the first place.
                 It holds a special place in my heart.</p>
 
@@ -74,7 +79,7 @@
         </section>
 
         <aside id="asideFlex" class="aside-color">
-            <h2 class="header-green">Some of My Favorite Songs</h2>
+            <h2 class="header-color">Some of My Favorite Songs</h2>
             
             <figure>
                 <a href="https://open.spotify.com/track/4XalmoFLB7dtAEVomgCL0X?si=2b127c2bf8b94937"><img src="images/cibo-matto.png" alt="Album cover of Steteotype A by Cibo Matto"></a>
@@ -97,7 +102,7 @@
         <main class="mobile-faq"> 
 
             <nav class="nav nav-bg" id="nav">
-                <h2 class="mobile-h2 header-green" id="h2Text">Page Links</h2>
+                <h2 class="mobile-h2 header-color" id="h2Text">Page Links</h2>
                 <ul>
                     <li><a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a></li>
                     <li><a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
@@ -107,23 +112,23 @@
             </nav>
     
             <section>
-                <h2 class="header-green">Frequently Asked Questions</h2>
+                <h2 class="header-color">Frequently Asked Questions</h2>
     
-                <h3 class="header-green">Where are you from?</h3>
+                <h3 class="header-color">Where are you from?</h3>
                 <p>I'm from Dallas, Texas; born and raised. Though, I'm currently living in Garland, Texas. I've 
                     never lived anywhere else, but I have been to a few other states.</p>
     
-                <h3 class="header-green">Have you been outside of the country?</h3>
+                <h3 class="header-color">Have you been outside of the country?</h3>
                 <p>I've only ever been to Mexico. However, I would like to visit other places outside of North America.
                     I'd love to go to Japan and the Netherlands.</p>
     
-                <h3 class="header-green">What's your ethnicity/race?</h3>
+                <h3 class="header-color">What's your ethnicity/race?</h3>
                 <p>I'm Mexican. Oddly enough, people do think I'm Filipino or Arabic...</p>
     
-                <h3 class="header-green">What's your favorite song?</h3>
+                <h3 class="header-color">What's your favorite song?</h3>
                 <p>My favorite song is "Moonchild" by Cibo Matto. Close contenders are "Didn't Cha Know" by Erykah Badu and "SAY GOODBYE" by Hiroshi Sato.</p>
     
-                <h3 class="header-green">What's your favorite video game?</h3>
+                <h3 class="header-color">What's your favorite video game?</h3>
                 <p>My favorite video game is "Suikoden II." It's this game is the reason why I wanted to go into game development in the first place.
                     It holds a special place in my heart.</p>
     
@@ -135,7 +140,7 @@
             </section>
     
             <section>
-                <h2 class="header-green">Some of My Favorite Songs</h2>
+                <h2 class="header-color">Some of My Favorite Songs</h2>
                 
                 <figure>
                     <a href="https://open.spotify.com/track/4XalmoFLB7dtAEVomgCL0X?si=2b127c2bf8b94937"><img src="images/cibo-matto.png" alt="Album cover of Steteotype A by Cibo Matto"></a>

@@ -18,10 +18,34 @@ header h1{
     font-family: gilda-display;
 }
 
+.button {
+    width: auto;
+    color: var(--text1);
+    background-color: var(--link-icon);
+}
+
 nav li {
     list-style-type: none;
     display: inline-block;
 }
+
+.topnav {
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav .menu {
+    display: none;
+  }
+  
 
 h2, h3 {
     font-weight: bold;
@@ -49,7 +73,7 @@ p, blockquote {
 }
 
 #border {
-    border: var(--light-blue) medium solid;
+    border: medium solid;
     background-image: var(--radial);
 }
 
@@ -59,12 +83,12 @@ figure {
 }
 
 #figureBorder {
-    border: var(--light-blue) medium solid;
+    border: var(--border-color1) medium solid;
     border-radius: 6px;
 }
 
 .figcapBorder {
-    border-top: var(--light-blue) medium solid;
+    border-top: var(--border-color1) medium solid;
 }
 
 footer {

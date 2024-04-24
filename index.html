@@ -6,51 +6,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/theme1.css">
+        <link rel="stylesheet" href="css/theme2.css" id="color">
+        <link rel="stylesheet" href="css/theme1.css" id="color">
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/fontawesome.css">
         <link rel="stylesheet" href="css/solid.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="javascript/javascript.js" defer></script>
     </head>
 
     <body class="body-color"> 
             
-        <header id="headerText" class="headerFade bg">
-            <h1 class="header-color">I'm Anthony, Welcome to My Page</h1>
+        <header id="headerText" class="bg">
+            <h1 class="header-top">I'm Anthony, Welcome to My Page</h1>
+            <h2 class="header-color" id="pageWelcome">Hello</h2>
             <img class="logo2 logoFade" src="images/pyro-jack.png" alt="Pyro Jack Logo">
             <img class="logoImage logoFade" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
         </header>
             
-        <nav id="nav" class="nav-bg">
+        <nav id="nav myTopnav" class="nav-bg nav-button topnav">
             <a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a>
             <a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a>
+            <button onClick="changeStyle('css/theme2.css');" class="button">Apply New Style</button>
+            <button onClick="changeStyle('css/theme1.css');" class="button">Apply Old Style</button>
             <a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a>
             <a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a>
+            <a href="register.html" class="link"><i class="fa-regular fa-file-pen icon"></i>Register</a>
+            <a class="menu" onClick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
 
         <main class="bg">
 
             <section>
-                <h2 class="header-red">About Me</h2>
+                <h2 class="header-color">About Me</h2>
                 <blockquote>My name is <em>Anthony Reyna</em>. I'm currently 21 years old and my birthday is on February 15th.</blockquote>
             </section>
 
             <section>
-                <h2 class="header-red">My Schooling</h2>
-                    <h3 class="header-red">My Reason For Taking This Class</h3>
+                <h2 class="header-color">My Schooling</h2>
+                    <h3 class="header-color">My Reason For Taking This Class</h3>
                     <p>The reason I'm taking <strong>Web Authoring</strong> this semester is I am going through the 
                         <strong>Development program</strong>, and it is a required class for the program.</p>
                     <p>This class will also help me reinforce the skills I've already learned the past semester.</p>
-                    <h3 class="header-red">Other Classes I've Taken</h3>
+                    <h3 class="header-color">Other Classes I've Taken</h3>
                     <p>Some of the other classes I've taken are some of the general classes that is required; like Algebra and English.</p>
                     <p>Before going through the Web Dev program, I was in the <strong>Game Development program</strong>, and took classes 
                         related to game programming.</p>
             </section>
 
             <section>
-                <h2 class="header-red">My Goals</h2>
+                <h2 class="header-color">My Goals</h2>
                 <p>My goals for the future are to be able to create a functioning website that shows off my capablilites as
                     a web designer.</p>
                 <p>I'd also like to be able to use these skills to be able to create websites for people or businesses, and
@@ -58,7 +67,7 @@
             </section>
 
             <article id="border">
-                <h2 class="header-red">My Interests and Hobbies</h2>
+                <h2 class="header-color">My Interests and Hobbies</h2>
                     <ul>
                         <li>Playing Video Games</li>
                         <li>Watching Videos Online</li>
@@ -68,7 +77,7 @@
             </article>
             
             <section>
-                <h2 class="header-red">Some of My Favorite Video Game Characters</h2>
+                <h2 class="header-color">Some of My Favorite Video Game Characters</h2>
                 <div class="flexImage">
                     <figure id="figureBorder">
                         <img src="images/shiro.png" alt="Shiro seen in Fire Emblem Fates">

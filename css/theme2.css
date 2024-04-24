@@ -1,28 +1,23 @@
 /* Analogous*/
 
 :root {
-    --text1:#000000;
-    --text2: #ffffff;
+    --text1: #ffffff;
+    --text2:#000000;
     --main-bg: #0077BB;
-    --dark-blue: #222255;
+    --accent-blue: #222255;
     --light-blue: #77AADD;
-    --cyan: #6699CC;
-    --mute-cyan: #88CCEE;
-    --light-cyan: #99DDFF;
-    --pale-cyan: #CCEEFF;
-    --dark-cyan: #225555;
-    --teal: #009988;
-    --mute-teal: #44AA99;
-    --mint: #44BB99;
     --link-icon: #117733;
     --link-hover: #228833;
     --link-visited: #225522;
     --header-color:#99DDFF;
-    --gradient: linear-gradient(to bottom,  #44AA99, #6699CC, #44AA99);
-    --gradient-footer: linear-gradient(to right,  #44AA99, #6699CC, #44AA99);
+    --border-color1: #44BB99;
+    --border-color2: #225555;
+    --gradient1: linear-gradient(to right,  #44AA99, #6699CC, #44AA99);
+    --gradient2: linear-gradient(to bottom,  #44AA99, #6699CC, #44AA99);
+    --radial: radial-gradient(#004488 40%, #0077BB 80%, #6699CC);
 }
 
-.main-bg {
+.body-color {
     background-color: var(--main-bg);
     color: var(--text2);
 }
@@ -31,20 +26,20 @@
     background-color: var(--main-bg);
 }
 
-.header-color {
+.header-top {
     background-color: var(--main-bg);
-    color: var(--dark-cyan);
+    color: var(--accent-blue);
 }
 
 .nav-bg {
-    background-image: var(--gradient);
+    background-image: var(--gradient1);
 }
 
 .aside-color {
-    background-image: var(--gradient);
+    background-image: var(--gradient1);
 }
 
-.link {
+.link, .menu {
     color: var(--link-icon);
 }
 
@@ -60,11 +55,24 @@
     color: var(--light-blue);
 }
 
-.header-green {
+.header-color {
     color: var(--header-color);
 }
 
+#border {
+    border: var(--border-color1) medium solid;
+}
+
+#figureBorder {
+    border: var(--border-color1) medium solid;
+    border-radius: 6px;
+}
+
+.figcapBorder {
+    border-top: var(--border-color1) medium solid;
+}
+
 .footer-color {
-    background-image: var(--gradient-footer);
+    background-image: var(--gradient1);
     color: var(--text2);
 }

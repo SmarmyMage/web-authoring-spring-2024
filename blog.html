@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/theme1.css">
+        <link rel="stylesheet" href="css/theme2.css" id="color">
+        <link rel="stylesheet" href="css/theme1.css" id="color">
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/fontawesome.css">
         <link rel="stylesheet" href="css/solid.css">
@@ -18,22 +19,28 @@
     <body class="body-color">
 
         <header id="headerText" class="headerFade bg">
-            <h1 class="header-color">Web Design/Development Articles</h1>
+            <h1 class="header-top">Web Design/Development Articles</h1>
             <img class="logo2 logoFade" src="images/pyro-jack.png" alt="Pyro Jack Logo">
             <img class="logoImage logoFade" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
         </header>
 
-        <nav id="nav" class="nav-bg">
+        <nav id="nav myTopnav" class="nav-bg nav-button topnav">
             <a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a>
             <a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a>
+            <button onClick="changeStyle('css/theme2.css');" class="button">Apply New Style</button>
+            <button onClick="changeStyle('css/theme1.css');" class="button">Apply Old Style</button>
             <a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a>
             <a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a>
+            <a href="register.html" class="link"><i class="fa-regular fa-file-pen icon"></i>Register</a>
+            <a class="menu" onClick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
 
         <main class="bg">
 
             <aside>
-                <h2 class="header-red">List of Articles</h2>
+                <h2 class="header-color">List of Articles</h2>
                 <ul>
                     <li><a href="#codecademy" class="link">Codecademy</a></li>
                     <li><a href="#ibm" class="link">IBM</a></li>
@@ -44,7 +51,7 @@
 
             <h2 id="codecademy"><a href="https://www.codecademy.com/article/f1-u6a2-design-color" class="link">Codecademy</a></h2>
             <article>
-                <h3 class="header-red">Design - Colors</h3>
+                <h3 class="header-color">Design - Colors</h3>
                 <img src="images/codecademy.png" class="flexImage" alt="Codecademy logo" title="Codecademy Logo">
                 <p>This article by the Codecademy team talks about how color is an important tool in designing a webpage. The article goes
                     into how to decide what colors you should pick by looking at other websites and using online tools to choose colors.
@@ -56,7 +63,7 @@
 
             <h2 id="ibm"><a href="https://developer.ibm.com/articles/wa-interface/" class="link">IBM</a></h2>
             <article>
-                <h3 class="header-red">User interface design for the mobile web</h3>
+                <h3 class="header-color">User interface design for the mobile web</h3>
                 <img src="images/ibm.png" class="flexImage" alt="IBM logo" title="IBM Logo">
                 <p>This article written by James Letz goes over how mobile devices differenciate between each other and 
                     the best practices for designing mobile web UIs. The article talks about display size and input for mobile devices.
@@ -68,7 +75,7 @@
 
             <h2 id="gfg"><a href="https://www.geeksforgeeks.org/web-development/" class="link">GeeksforGeeks</a></h2>
             <article>
-                <h3 class="header-red">Web Development</h3>
+                <h3 class="header-color">Web Development</h3>
                 <img src="images/gfg.png" class="flexImage" alt="GeeksforGeeks logo" title="GeeksforGeeks Logo">
                 <p>This article on GeeksforGeeks talks about the frontend and backend development in web development. Frontend development
                     is the part of a website users interact with, and where developers use HTML and CSS. Backend development deal with the server
@@ -80,7 +87,7 @@
 
             <h2 id="ux"><a href="https://uxmag.com/articles/why-web-design-is-dead" class="link">UX Magazine</a></h2>
             <article>
-                <h3 class="header-red">Why Web Design is Dead</h3>
+                <h3 class="header-color">Why Web Design is Dead</h3>
                 <img src="images/ux-magazine.png" class="flexImage" alt="UX Magazine logo" title="UX Magazine Logo">
                 <p>This article by Sergio Nouvel goes over how web design is dying out to the popularity and increase use of UX Design
                     for a number of reasons. Some of the reasons mentions are: templates being commodofied, the use of AI, and

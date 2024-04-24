@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title>Products</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/theme2.css">
         <link rel="stylesheet" href="css/layout.css">
@@ -19,33 +19,38 @@
     <body class="body main-bg">
 
         <header id="headerText" class="header bg">
-            <h1 class="header-color">Products</h1>
+            <h1 class="header-top">Products</h1>
             <img class="logo2 logoFade" src="images/pyro-jack.png" alt="Pyro Jack Logo">
             <img class="logoImage logoFade" src="images/jack-frost-logo.png" alt="Jack Frost Logo">
         </header>
 
-        <nav class="nav  nav-bg" id="nav-top">
-            <h2 class="mobile-h2 header-green" id="h2Text">Page Links</h2>
-            <ul class="ul">
-                <li><a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a></li>
-                <li><a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
-                <li><a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a></li>
-                <li><a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a></li>
-            </ul>
+        <nav id="nav myTopnav" class="nav-bg nav-button topnav">
+            <a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a>
+            <a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a>
+            <button onClick="changeStyle('css/theme2.css');" class="button">Apply New Style</button>
+            <button onClick="changeStyle('css/theme1.css');" class="button">Apply Old Style</button>
+            <a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a>
+            <a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a>
+            <a href="register.html" class="link"><i class="fa-regular fa-file-pen icon"></i>Register</a>
+            <a class="menu" onClick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
 
         <nav class="navFlex desk-top nav-bg">
-            <h2 id="h2Text" class="header-green">Page Links</h2>
+            <h2 id="h2Text" class="header-color">Page Links</h2>
             <ul class="ul">
                 <li><a href="index.html" class="link"><i class="fa-solid fa-house icon"></i>Home</a></li>
                 <li><a href="blog.html" class="link"><i class="fa-solid fa-newspaper icon"></i>Blog</a></li>
+                <button onClick="changeStyle('css/theme2.css');" class="button">Apply New Style</button>
+                <button onClick="changeStyle('css/theme1.css');" class="button">Apply Old Style</button>
                 <li><a href="products.html" class="link"><i class="fa-solid fa-gamepad icon"></i>Products</a></li>
                 <li><a href="faq.html" class="link"><i class="fa-regular fa-circle-question icon"></i>FAQ</a></li>
             </ul>
         </nav>
 
         <main class="main bg">
-            <h2 class="header-green">Games I Am Currently Playing</h2>
+            <h2 class="header-color">Games I Am Currently Playing</h2>
 
             <figure class="flexImage">
                 <img src="images/nocturne.png" alt="Cover of Shin Megami Tensei III">
@@ -68,7 +73,7 @@
             </figure>
 
             <section class="mobile-main">
-                <h2 class="header-green">Game Backlog</h2>
+                <h2 class="header-color">Game Backlog</h2>
     
                 <figure>
                     <img src="images/dds.png" alt="Cover of Digital Devil Saga">
@@ -90,7 +95,7 @@
         </main>
 
         <aside class="aside aside-color" id="asideFlex">
-            <h2 class="header-green">Game Backlog</h2>
+            <h2 class="header-color">Game Backlog</h2>
 
             <figure>
                 <img src="images/dds.png" class="flexImage" alt="Cover of Digital Devil Saga">
