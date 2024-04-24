@@ -131,7 +131,7 @@ footer {
 
 @media screen and (min-width: 500px) {
 
-   .mobile-faq, .mobile-nav, .mobile-main, #nav-top {
+   .mobile-faq, .mobile-nav, .mobile-main, #nav-top, .mobile.nav {
         display: none;
    }
 
