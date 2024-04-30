@@ -1,8 +1,8 @@
 /* Analogous*/
 
 :root {
-    --text1: #ffffff;
-    --text2:#000000;
+    --text1:#000000;
+    --text2: #ffffff;
     --main-bg: #0077BB;
     --accent-blue: #222255;
     --light-blue: #77AADD;
@@ -12,6 +12,7 @@
     --header-color:#99DDFF;
     --border-color1: #44BB99;
     --border-color2: #225555;
+    --button-text: #ffffff;
     --gradient1: linear-gradient(to right,  #44AA99, #6699CC, #44AA99);
     --gradient2: linear-gradient(to bottom,  #44AA99, #6699CC, #44AA99);
     --radial: radial-gradient(#004488 40%, #0077BB 80%, #6699CC);

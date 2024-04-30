@@ -10,6 +10,7 @@
     --header-color:#EE99AA;
     --border-color1: #6699CC;
     --border-color2:#BB5566;
+    --button-text: #000000;
     --gradient1: linear-gradient(to right,  #66CCEE, #0077BB, #66CCEE); 
     --gradient2: linear-gradient(to bottom,  #66CCEE, #0077BB, #66CCEE);
     --radial: radial-gradient(#004488 40%, #0077BB 80%, #6699CC);
@@ -51,6 +52,10 @@
 
 .header-color {
     color: var(--header-color);
+}
+
+.aside-color {
+    background-image: var(--gradient1);
 }
 
 .footer-color {

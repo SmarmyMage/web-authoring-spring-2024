@@ -27,12 +27,12 @@
 
     .body {
         display: grid;
-        grid-template-rows: [header-start] 1fr [content-start] auto [footer-start] 10vh;
+        grid-template-rows: [header-start] 1fr [content-start] auto [footer-start] 0fr;
         grid-template-columns: [nav] 1fr [main] 3fr [aside] 1fr;
         grid-template-areas:
         "head head head"
         "nav main aside"
-        "foot foot foot";
+        "nav foot aside";
     }
     
     .header {
@@ -86,8 +86,6 @@
     
     .footer {
         grid-area: foot;
-        padding: 0;
-
     }
 
     .footer p {
