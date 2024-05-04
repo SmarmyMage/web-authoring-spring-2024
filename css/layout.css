@@ -242,6 +242,15 @@ footer {
         flex: 1 1 17.2%;
         padding: 1em;
     }
+
+    .about-flex {
+        display: flex;
+    }
+
+    .flex-div {
+        width: 33%;
+        padding: 0 2em;
+    }
     
     #border {
         box-sizing: border-box;
