@@ -8,7 +8,7 @@ document.getElementById('pageWelcome').innerHTML = "Welcome " + visitorName;
 
 function myFunction() {
 	var x = document.getElementById("myTopnav");
-	if (x.className === "nav-bg nav-button topnav") {
+	if (x.className === "main-nav nav-bg nav-button topnav") {
 	  x.className += " responsive";
 	} else {
 	  x.className = "nav-bg nav-button topnav";

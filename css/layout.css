@@ -40,7 +40,7 @@ h3 {
     text-align: center;
 }
 
-#nav, #nav-top {
+.main-nav, #nav-top {
     position: sticky;
     top: 0;
 }
@@ -194,10 +194,6 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-
-    #myTopnav {
-        display: none;
-    }
 
     section h2, aside h2 {
         text-align: left;
