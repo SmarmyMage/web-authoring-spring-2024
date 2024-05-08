@@ -86,7 +86,7 @@ figure {
     margin: 1em;
 }
 
-#figureBorder {
+.figureBorder {
     border: var(--border-color1) medium solid;
     border-radius: 6px;
 }
