@@ -89,7 +89,7 @@ footer {
 }
 
 @media screen and (max-width: 499px) {
-    #mainFlex, .desk-top {
+    #mainFlex {
         display: none;
     }
 
@@ -126,7 +126,7 @@ footer {
 
 @media screen and (min-width: 500px) {
 
-   .mobile-faq, .mobile-nav, .mobile-main, #nav-top, .mobile.nav {
+   .mobile-faq, .mobile-nav, .mobile-main, #nav-top {
         display: none;
    }
 
@@ -139,16 +139,7 @@ footer {
         justify-content: space-evenly;
    }
 
-    .navFlex {
-        display: flex;
-        flex: 1 0 15%;
-        padding: 1em;
-        flex-flow: column wrap;
-        min-width: 200px;
-        background-image: var(--gradient1);
-    }
-
-    section h2, aside h2 {
+    section h2, aside h2, .grid-h2{
         text-align: center;
     }
 
@@ -160,6 +151,19 @@ footer {
         margin: 1em;
     }
 
+}
+
+@media screen and (max-width: 699px) {
+
+    .desk-top {
+        display: none
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .faq-nav {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 999px) {
@@ -178,6 +182,7 @@ footer {
 
     .topnav.responsive {
         position: relative;
+        flex-direction: column;
     }
 
     .topnav.responsive .menu {
@@ -194,6 +199,10 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+
+    .phone-nav {
+        display: none;
+    }
 
     section h2, aside h2 {
         text-align: left;
